@@ -1,1 +1,12 @@
 <p>home works!</p>
+
+
+
+    <div class="imageSrc">
+        <button type="button" (click)="checkpreview()">
+            {{ showPreview?"Hide": "show"}} Preview
+
+        </button>
+
+    </div>
+    <img [src]="imageSrc" height="200" width="200" *ngIf="showPreview">
